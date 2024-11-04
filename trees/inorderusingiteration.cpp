@@ -30,7 +30,7 @@ node* binarytree(node* root){
 void visitednodes(node* root, map<node*,bool>&visited) {
     queue<node*> q;
     q.push(root);
-    visited[root] =false;  // Root has no parent
+    visited[root] =false;
     
     while(!q.empty()) {
         node* front = q.front();

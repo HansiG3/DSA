@@ -99,7 +99,6 @@ node* todelete(node*root,int val){
         //2 children
         if(root->left!=NULL && root->right!=NULL){
             int min=min_value(root->right)->data;  // either right subtree ki min value or left subtree ki max value=min->data;
-            root->data=min;
             root->right=todelete(root->right,min);
             return root;
         }

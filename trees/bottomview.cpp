@@ -27,7 +27,7 @@ node* create(node* root){
     root->right=create(root->right);
     return root;
 }
-vector<int>topview(node*root){
+vector<int>bottomview(node*root){
     vector<int>ans;
     if(root==NULL){
         return ans;
@@ -56,7 +56,7 @@ vector<int>topview(node*root){
 int main(){
     node*root=NULL;
     root=create(root);
-    vector<int>result=topview(root);
+    vector<int>result=bottomview(root);
     for(int i=0;i<result.size();i++){
         cout<<result[i]<<" ";
     }
