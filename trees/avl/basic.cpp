@@ -109,7 +109,6 @@ node* deletenode(node*root,int d){
             root->data=mini;
             root->right=deletenode(root->right,mini);
         }
-        return root;
     }
     
     root->height=1+max(height(root->left),height(root->right));
