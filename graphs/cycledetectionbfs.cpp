@@ -3,6 +3,7 @@
 #include<vector>
 #include<queue>
 using namespace std;
+//undirected graph
 // time complexity is same as that of bfs i.e O(n)
 void adj(vector<vector<int>>edges,vector<vector<int>>&adj_list){
     for(int i=0;i<edges.size();i++){
